@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyla's Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛍️ Lyla's Store</h1>
+        <button onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <h2>Our Products</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="product-image">👕</div>
+                <h3>Classic T-Shirt</h3>
+                <p>$20</p>
+                <button onclick="addToCart('Classic T-Shirt', 20)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">👟</div>
+                <h3>Running Shoes</h3>
+                <p>$60</p>
+                <button onclick="addToCart('Running Shoes', 60)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">🎒</div>
+                <h3>Backpack</h3>
+                <p>$35</p>
+                <button onclick="addToCart('Backpack', 35)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>$80</p>
+                <button onclick="addToCart('Smart Watch', 80)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="cart" class="cart">
+        <div class="cart-box">
+            <button class="close" onclick="closeCart()">✕</button>
+
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cart-items"></div>
+
+            <h3>Total: $<span id="total">0</span></h3>
+
+            <button class="checkout" onclick="checkout()">
+                Checkout
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Lyla's Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
